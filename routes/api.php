@@ -110,7 +110,7 @@ Route::group(['middleware' => ['jwt.verify']], function () {
     Route::post('patients/{patient}/physical_exams', 'App\\Http\\Controllers\\PhysicalExamController@store');
 
     Route::get('patients/{patient}/physical_exams/{physical_exam}', 'App\\Http\\Controllers\\PhysicalExamController@showOnePhysicalExam');
-    Route::put('patients/{patient}/physical_exams/{physical_exam}', 'App\\Http\\Controllers\\PhysicalExamController@update');
+    Route::put('physical_exams/{physical_exam}', 'App\\Http\\Controllers\\PhysicalExamController@update');
     Route::delete('patients/{patient}/physical_exams/{physical_exam}', 'App\\Http\\Controllers\\PhysicalExamsController@delete');
 
     //-----------Rutas exploraciones a pacientes-----------------------------

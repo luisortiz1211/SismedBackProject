@@ -18,7 +18,7 @@ class PatientsTableSeeder extends Seeder
 
         foreach ($users as $user) {
             // sesion de usuario
-            //JWTAuth::attempt(['email' => $user->email, 'password' => '123123']);
+            JWTAuth::attempt(['email' => $user->email, 'password' => '123123']);
 
             foreach ($users as $user) {
                 Patient::create([

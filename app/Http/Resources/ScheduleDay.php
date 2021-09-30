@@ -16,7 +16,6 @@ class ScheduleDay extends JsonResource
     public function toArray($request)
     {
         return [
-            'patient_id'=>$this->patient_id,
             //'id' => $this->id,
             'scheduleDay' => $this->scheduleDay,
             'scheduleDayState'=>$this->scheduleDayState,
@@ -25,6 +24,7 @@ class ScheduleDay extends JsonResource
             'schedule_id' => $this->schedule_id,
             'created_at' => $this->created_at,
             'userAssigned'=>$this->userAssigned,
+            'patient_id'=>$this->patient_id,
         ];
     }
 }
