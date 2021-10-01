@@ -26,10 +26,11 @@ class ExplorationPatientsTableSeeder extends Seeder
             //$role_user = '1';
             //for ($i = 0; $i < $num_exams; $i++)
             foreach ($physicalExam as $exams) {
+
                 ExplorationPatient::create([
                     'physicalExam_id' => $exams->id,
                     'user_id' => $user->id,
-                    'patient_id'=>$exams->id,
+                    'patient_id'=>$faker->numberBetween($min = 1, $max = 25),
                     'headExplo' => $faker->sentence,
                     'chestExplo' => $faker->sentence,
                     'extremitiesExplo' => $faker->sentence,
