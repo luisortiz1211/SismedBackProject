@@ -30,6 +30,7 @@ class ExplorationPatient extends JsonResource
             'treatmentExplo' => $this->treatmentExplo,
             'commentExplo' => $this->commentExplo,
             'user_id' => $this->user_id,
+            'created_at'=>$this->created_at,
         ];
     }
 }

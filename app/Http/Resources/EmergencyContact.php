@@ -16,6 +16,7 @@ class EmergencyContact extends JsonResource
     {
         //return parent::toArray($request);
         return [
+            'id'=>$this->id,
             'emergencyContact_id' => $this ->id,
             'patient_id' => $this->patient_id,
             'nameContact' => $this->nameContact,

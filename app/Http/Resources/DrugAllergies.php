@@ -22,6 +22,8 @@ class DrugAllergies extends JsonResource
             'drugName' => $this->drugName,
             'drugSymptom' => $this->drugSymptom,
             'drugRemark' => $this->drugRemark,
+            'created_at'=>$this->created_at,
+     
         ];
     }
 }

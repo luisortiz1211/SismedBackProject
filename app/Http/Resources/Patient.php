@@ -37,8 +37,9 @@ class Patient extends JsonResource
             'nationality' => $this->nationality,
             'city' => $this->city,
             'parish' => $this->parish,
-            'user_id'=>$this->user_id
-            //'scheduleDay' => '/api/schedule_days/' . $this->id,
+            'user_id'=>$this->user_id,
+            'physicalExam_id'=>$this->physicalExam_id,
+             //'scheduleDay' => '/api/schedule_days/' . $this->id,
             //'emergencyContact' =>
             //    '/api/patients/' . $this->id . '/emergency_contacts',
             //

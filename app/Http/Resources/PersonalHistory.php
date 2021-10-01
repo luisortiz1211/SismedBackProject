@@ -16,8 +16,9 @@ class PersonalHistory extends JsonResource
     {
         //return parent::toArray($request);
         return [
-            'patient_id'=>$this->patient_id,
-            'PersonalHistory_id'=>$this->id,
+            'created_at'=>$this->created_at,
+           'patient_id'=>$this->patient_id,
+            'personalHistory_id'=>$this->id,
             'nameCondition' => $this->nameCondition,
             'yearCondition' => $this->yearCondition,
             'commentCondition' => $this->commentCondition,

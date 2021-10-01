@@ -16,7 +16,7 @@ class PhysicalExam extends JsonResource
     {
         //return parent::toArray($request);
         return [
-            'physicalExam_id' => $this->id,
+            'physicalExam_id' => $this->id,    
             'heartRate' => $this->heartRate,
             'bloodPleasure' => $this->bloodPleasure,
             'weight' => $this->weight,
@@ -31,11 +31,10 @@ class PhysicalExam extends JsonResource
             'currentCondition' => $this->currentCondition,
             'comment' => $this->comment,
             'currentDrug' => $this->currentDrug,
-            'patient_id' => $this->patient_id,
             'user_id' => $this->user_id,
             'created_at'=>$this->created_at,
+            'patient_id' => $this->patient_id,
             
-
             //los usuario son varios convertir a coleccion
         ];
     }
