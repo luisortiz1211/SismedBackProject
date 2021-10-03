@@ -39,18 +39,6 @@ class Patient extends JsonResource
             'parish' => $this->parish,
             'user_id'=>$this->user_id,
             'physicalExam_id'=>$this->physicalExam_id,
-             //'scheduleDay' => '/api/schedule_days/' . $this->id,
-            //'emergencyContact' =>
-            //    '/api/patients/' . $this->id . '/emergency_contacts',
-            //
-            //'personalHistory' => '/api/personal_histories/' . $this->id,
-            //'drugAllergies' => '/api/drug_allergies/' . $this->id,
-            //'familyHistories' => '/api/family_histories/' . $this->id,
-            //'physicalExam' => '/api/physical_exams/' . $this->patient_id,
-            //'explorationPatient' => '/api/exploration_patients/' . $this->id,
-            //'drugsRecipies' => '/api/drugs_recipies/' . $this->id,
-            //'imageRecipies' => '/api/image_recipies/' . $this->id,
-            //'imageREcipies' => ImageRecipie::find($this->id),
         ];
     }
 }

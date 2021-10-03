@@ -24,6 +24,7 @@ class DrugsRecipie extends JsonResource
             'coddrug' => $this->coddrug,
             'nameDrugRecipie' => $this->nameDrugRecipie,
             'user_id' => $this->user_id,
+            'created_at'=>$this->created_at,
         ];
     }
 }

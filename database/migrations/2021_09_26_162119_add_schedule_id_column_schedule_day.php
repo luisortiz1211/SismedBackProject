@@ -19,7 +19,7 @@ class AddScheduleIdColumnScheduleDay extends Migration
                 ->foreign('schedule_id')
                 ->references('id')
                 ->on('schedule_users')
-                ->onDelete('restrict');
+                ->onDelete('set null');
         });
     }
 
