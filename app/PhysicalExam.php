@@ -25,6 +25,7 @@ class PhysicalExam extends Model
         'comment',
         'currentDrug',
         'patient_id',
+        'schedule_day'
     ];
     //Relacion un Examen fisico tiene una exploracion
     public function explorationPatient()

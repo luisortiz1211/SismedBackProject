@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Resources;
-
+use App\ScheduleDay;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class PhysicalExam extends JsonResource
@@ -17,6 +17,7 @@ class PhysicalExam extends JsonResource
         //return parent::toArray($request);
         return [
             'physicalExam_id' => $this->id,    
+            'schedule_day' => $this->schedule_day,
             'heartRate' => $this->heartRate,
             'bloodPleasure' => $this->bloodPleasure,
             'weight' => $this->weight,

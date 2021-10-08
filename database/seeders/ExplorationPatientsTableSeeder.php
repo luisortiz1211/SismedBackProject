@@ -30,7 +30,9 @@ class ExplorationPatientsTableSeeder extends Seeder
                 ExplorationPatient::create([
                     'physicalExam_id' => $exams->id,
                     'user_id' => $user->id,
-                    'patient_id'=>$faker->numberBetween($min = 1, $max = 25),
+                    //'patient_id'=>$faker->numberBetween($min = 1, $max = 25),
+                    'patient_id'=>$exams->id,
+                     
                     'headExplo' => $faker->sentence,
                     'chestExplo' => $faker->sentence,
                     'extremitiesExplo' => $faker->sentence,

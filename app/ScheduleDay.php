@@ -13,7 +13,8 @@ class ScheduleDay extends Model
         'schedule_id',
         'userAssigned',
         'scheduleDayState',
-        'patient_id'
+        'patient_id',
+   
     ];
     //Relacion una cita agendada le pertenece a un paciente
     public function patient()
